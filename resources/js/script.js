@@ -38,5 +38,30 @@ $(document).ready(function() {
           });    
     });
     
+    /* Animate features on scroll */
+    $('.js--waypoint-1').waypoint(function(direction) {
+        $('.js--waypoint-1').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+    })
+    /* Animate app-screen image on scroll */
+    $('.js--waypoint-2').waypoint(function(direction) {
+        $('.js--waypoint-2').addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    })
+    /* Animate cities on scroll */    
+    $('.js--waypoint-3').waypoint(function(direction) {
+        $('.js--waypoint-3').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+    })
+    /* Animate pricing plans on scroll */    
+    $('.js--waypoint-4').waypoint(function(direction) {
+        $('.js--waypoint-4').addClass('animated pulse');
+    }, {
+        offset: '50%'
+    })
+
     
 });
