@@ -65,6 +65,51 @@
     
     .main-nav { display: none; }
     
+    .mobile-nav-icon { 
+        display: inline-block; 
+        position: relative;
+        z-index: 9999;
+    }
+    
+    .main-nav { 
+        float: none;
+        position: absolute;
+        z-index: 8888;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        margin-left: -2%;        
+        background-color: rgba(230, 126, 34, 0.92);
+        text-align: center;
+        padding-top: 20vh;
+      }
+    
+    .main-nav li {
+        display: block;
+        margin-left: 0;
+        font-size: 110%;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav { margin-top: 10px; }
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { 
+        padding: 10px 0; 
+        color: #fff;
+    }
+    
+    .sticky .mobile-nav-icon { margin-top: 10px; }    
+    .sticky .mobile-nav-icon i { color: #555; }
+    .sticky .mobile-nav-icon i.ion-close-round { color: #fff; }    
+    
     h1 { font-size: 180%; }
     h1 { font-size: 150%; }
     
